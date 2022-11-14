@@ -7,7 +7,7 @@ export function TareaFormulario(props){
     const [input, setInput] = useState('');
     const cambioHandler = e => {
         setInput(e.target.value);
-    }  
+    };  
 
     const envioHandler = e => {
         e.preventDefault();
@@ -15,7 +15,7 @@ export function TareaFormulario(props){
             id: uuidv4(),
             texto: input,
             completada: false
-        }
+        };
         props.onSubmit(tareaNueva);
     };
     return(
