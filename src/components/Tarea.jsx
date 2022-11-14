@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 import '../css/Tarea.css';
 export function Tarea({ id, texto, completada, completarTarea, eliminarTarea }){
+    //no suma clase COMPLETADA...
     return(
         <div className={completada ? 'tarea-contenedor completada': 'tarea-contenedor'}>
             <div 
